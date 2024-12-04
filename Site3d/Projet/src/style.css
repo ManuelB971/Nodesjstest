@@ -1,0 +1,115 @@
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e0e1dd;
+    background: none;
+    overflow-x: hidden;
+    background-size: cover;
+}
+
+/* Conteneur pour Three.js */
+#three-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -3; /* Derrière le contenu et le scroll-container */
+    background: radial-gradient(circle, #000 60%, #111); /* Fond dégradé */
+}
+
+#scroll-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Derrière le contenu, mais devant Three.js */
+    background: none; /* Transparent pour laisser voir Three.js */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #e0e1dd;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #82aaff;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 100px auto 20px;
+    text-align: center;
+}
+
+.profile-image {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3), 0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+h1, h2 {
+    color: #e0e1dd;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.title {
+    font-size: 1.2em;
+    color: #82aaff;
+    margin-bottom: 10px;
+}
+
+.certification-link {
+    color: #82aaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.certification-link:hover {
+    color: #ffa82a;
+}
