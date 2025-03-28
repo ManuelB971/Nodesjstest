@@ -1,4 +1,4 @@
-/* Style de base */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,15 +9,15 @@ body {
     background-size: cover;
 }
 
-/* Conteneur pour Three.js */
+
 #three-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -3; /* Derrière le contenu et le scroll-container */
-    background: radial-gradient(circle, #000 60%, #111); /* Fond dégradé */
+    z-index: -3; 
+    background: radial-gradient(circle, #000 60%, #111);
 }
 
 #scroll-container {
@@ -26,8 +26,8 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1; /* Derrière le contenu, mais devant Three.js */
-    background: none; /* Transparent pour laisser voir Three.js */
+    z-index: -1; 
+    background: none; 
 }
 
 .navbar {
